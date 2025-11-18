@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>نمط الحياة الصحي</title>
-<style>
-    body{font-family:'Tahoma',sans-serif;margin:0;padding:0;background:#eef3f7;}
-    header{background:#005f73;color:white;padding:18px 20px;font-size:26px;font-weight:bold;text-align:center;}
-    nav{background:#0a9396;padding:12px 10px;text-align:center;}
-    nav a{color:white;margin:0 15px;text-decoration:none;font-size:18px;font-weight:bold;}
-    nav a:hover{color:#ffd166;}
-    .container{width:85%;margin:auto;background:white;padding:20px;margin-top:20px;
-               border-radius:12px;box-shadow:0 0 10px #c3ced6;}
-    .section-title{color:#005f73;font-size:24px;font-weight:bold;margin-bottom:12px;}
-    img{width:100%;border-radius:12px;margin-top:10px;}
-    video{width:100%;border-radius:12px;margin-top:10px;}
-    footer{background:#005f73;color:white;padding:15px;text-align:center;margin-top:30px;font-size:14px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>نمط الحياة الصحي</header>
+    <header class="navbar">
+        <div class="logo">Healthy Life</div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#videos">الفيديوهات</a>
+            <a href="#about">من نحن</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#food">التغذية</a>
-    <a href="#sport">النشاط البدني</a>
-    <a href="#sleep">النوم</a>
-    <a href="#videos">فيديوهات</a>
-</nav>
+    <section class="hero" id="home">
+        <h1>أسلوب حياة صحي</h1>
+        <p>موقع يقدم نصائح حول التغذية والرياضة والنوم لتحسين حياتك.</p>
+    </section>
 
-<div class="container" id="home">
-    <div class="section-title">مرحبًا بك</div>
-    <p>موقع يقدم نصائح حول التغذية والرياضة والنوم.</p>
-</div>
+    <section class="section" id="videos">
+        <h2>فيديوهات تعليمية</h2>
 
-<div class="container" id="videos">
-    <div class="section-title">فيديوهات</div>
-    <p>فيديوهات تعليمية عن نمط الحياة الصحي:</p>
+        <div class="card">
+            <video controls>
+                <source src="sample.mp4" type="video/mp4">
+            </video>
+        </div>
 
-    <video controls>
-        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
-    </video>
+        <div class="card">
+            <video controls>
+                <source src="sample.mp4" type="video/mp4">
+            </video>
+        </div>
 
-    <video controls>
-        <source src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4" type="video/mp4">
-    </video>
-</div>
+    </section>
 
-<footer>© 2025 جميع الحقوق محفوظة — موقع نمط الحياة الصحي</footer>
+    <section class="section" id="about">
+        <h2>من نحن</h2>
+        <div class="card about">
+            <p>
+                نحن موقع يهدف لتوعية الناس بأهمية الصحة الجسدية والنفسية عبر التغذية الجيدة،
+                الرياضة، والنوم السليم. نقدم محتوى بسيط ومباشر لتسهيل حياة الناس.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        جميع الحقوق محفوظة © 2025
+    </footer>
 
 </body>
 </html>
